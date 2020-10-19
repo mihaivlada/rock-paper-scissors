@@ -14,23 +14,37 @@ function computerPlay() {
     }
 }
 
+// we declare a global variable to store the player score
+let playerScore = 0;
+// we declare a global variable to store the computer score
+let computerScore = 0;
+
 // write a function with 2 parameters that evaluates the playerSelection and the computerSelection
 // and displays a string if you win or lose
 function outcome(playerSelection, computerSelection) {
     if ((playerSelection === "rock") && (computerSelection === "scissors")) {
+        // we increase the player score each time the player wins
+        playerScore++;
         return `You won! ${playerSelection} beats ${computerSelection}`;
     }
     else if ((playerSelection === "scissors") && (computerSelection === "paper")) {
+        // we increase the player score each time the player wins
+        playerScore++;
         return `You won! ${playerSelection} beats ${computerSelection}`;
     }
     else if ((playerSelection === "paper") && (computerSelection === "rock")) {
+        // we increase the player score each time the player wins
+        playerScore++;
         return `You won! ${playerSelection} beats ${computerSelection}`;
     }
     else if (computerSelection === playerSelection) {
         return `It's a tie!`;
     }
-    else
+    else {
+        // we increase the computer score each time the computer wins
+        computerScore++;
         return `You lost! ${computerSelection} beats ${playerSelection}`;
+    }
 }
 
 // write a function game() that will play one round
@@ -47,10 +61,30 @@ function game(selection) {
     }
 }
 
-// get input from the user
-// put that input in a variable
-// make that input case insesitive
-let result = prompt("Choose rock, paper or scissors!");
-result = result.toLowerCase();
+// we declare a contor
+let i = 0;
 
-console.log(game(result));
+// we do a while loop to play 5 times
+while (i < 5) {
+
+    // get input from the user
+    // put that input in a variable
+    // make that input case insesitive
+    let result = prompt("Choose rock, paper or scissors!");
+    result = result.toLowerCase();
+    // play the game!
+    console.log(game(result));
+    // we display the score after each round
+    console.log(`Player score : ${playerScore}  Computer score : ${computerScore}`);
+    // we increase the contor
+    i++;
+}
+if (playerScore > computerScore) {
+    console.log("YOU ARE THE WINNER! CONGRATS");
+}
+else if(playerScore < computerScore){
+    console.log("Computer wins");
+}
+else {
+    console.log("It's a draw!");
+}
