@@ -1,0 +1,80 @@
+
+body {
+    background-image: url("pictures/background.jpg");
+}
+
+header {
+    text-align: right;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: #00dd25;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: x-large;
+    color: #00ee00a8 ;
+}
+
+#buttons {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.rock {
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+    font-weight: bolder;
+    background-image: linear-gradient(
+        #00ee00a8,
+        #00ee00a8
+    );
+    background-size: 100% 100%;
+    width: 200px;
+    height: 150px;
+    margin-left: 2vw;
+}
+
+.paper {
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    background-image: linear-gradient(
+        #00ee00a8,
+        #00ee00a8
+    );
+    background-size: 100% 100%;
+    width: 200px;
+    height: 150px;
+    margin: 0px 2vw 0px 2vw;
+}
+
+.scissors {
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    background-image: linear-gradient(
+        #00ee00a8,
+        #00ee00a8
+    );
+    background-size: 100% 100%;
+    width: 200px;
+    height: 150px;
+    margin-right: 2vw;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+}
