@@ -2,7 +2,7 @@
 
 
 # HOW I MADE THE GAME
-My first serious web project that I care about
+My first web project
 
 I use basic html structure, basic css styling (without flexbox or grid);
 In javascript I create a game knowledge, I select an element, I listen to a click event and create an element that writes an output to the screen based on the game knowledge
